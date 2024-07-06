@@ -15,6 +15,7 @@ const config: Config = {
       },
       screens: { xs: "520px", "2xl": "1400px" },
       colors: {
+        "light-blue": "#3b82f6",
         primary: {
           // background: "rgb(11, 17, 32, .03)", //"rgba(255, 255, 255, .05)",
           background: "#fff",

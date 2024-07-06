@@ -31,7 +31,7 @@ const ImageCard: FC<ImageCardProps> = ({
 
   return (
     <div
-      className={`max-w-sm border border-gray-200 rounded-lg shadow  text-gray-900 dark:text-white dark:border-gray-700 ${className}`}
+      className={`max-w-sm border border-gray-200 rounded-lg shadow  text-gray-900 dark:text-white dark:border-gray-700 mx-auto ${className}`}
     >
       <Image
         className="rounded-t-lg"

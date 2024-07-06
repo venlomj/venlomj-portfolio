@@ -1,6 +1,7 @@
 import AboutSection from "@/sections/about";
 import LandingSection from "./../sections/landing";
 import HobbySection from "@/sections/hobby";
+import SkillSection from "@/sections/skills";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <LandingSection />
       <AboutSection />
       <HobbySection />
+      <SkillSection />
     </div>
   );
 }
