@@ -16,3 +16,19 @@ body {
   width: 300px;
   overflow: hidden;
 }
+
+.light-image {
+  display: block;
+}
+
+.dark .light-image {
+  display: none;
+}
+
+.dark-image {
+  display: none;
+}
+
+.dark .dark-image {
+  display: block;
+}
