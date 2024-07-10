@@ -1,4 +1,5 @@
 import FeaturedCard from "@/components/card/featured/featured-card";
+import ExhibitionFeatured from "@/components/exhibition/exhibition-featured";
 import Heading from "@/components/heading/heading";
 import featuredData from "@/data/featured";
 import { FiArrowDownCircle, FiArrowUpRight } from "react-icons/fi";
@@ -20,7 +21,9 @@ export default function FeaturedSection() {
         client={MainFeatured.client!}
         img={MainFeatured.img}
       />
-      <div className="mt-24"></div>
+      <div className="mt-24">
+        <ExhibitionFeatured />
+      </div>
     </div>
   );
 }

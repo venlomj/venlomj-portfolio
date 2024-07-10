@@ -33,7 +33,9 @@ const Navbar = () => {
         >
           {NAV_LINKS.map((link, index) => (
             <Link href={link.route} key={index}>
-              <li>{link.name}</li>
+              <li className="link-style dark:bg-secondary-background dark:text-white">
+                {link.name}
+              </li>
             </Link>
           ))}
         </ul>

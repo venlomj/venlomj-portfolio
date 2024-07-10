@@ -32,3 +32,170 @@ body {
 .dark .dark-image {
   display: block;
 }
+
+/* .link-style:hover {
+  background-image: linear-gradient(to right, #54b3d6, #54b3d6 50%, #000 50%);
+  background-size: 200% 100%;
+  background-position: -100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+} */
+
+.link-style {
+  position: relative;
+  display: inline-block; /* Ensure the link behaves like an inline element with block-like styling */
+  text-decoration: none; /* Remove default underline */
+  font-weight: bold;
+}
+
+.link-style::after {
+  content: ""; /* Empty content for the pseudo-element */
+  position: absolute; /* Position it absolutely */
+  left: 0; /* Align it to the left of the parent element */
+  bottom: 0; /* Position it at the bottom */
+  width: 0; /* Initially hidden width */
+  height: 2px; /* Thickness of the underline */
+  background: #54b3d6; /* Color of the underline */
+  transition: width 0.3s ease; /* Smooth transition for width change */
+}
+
+.link-style:hover::after {
+  width: 75%; /* Width of the underline on hover */
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap");
+
+#portfolio .project {
+  @apply max-w-md mx-auto rounded-lg;
+}
+
+#portfolio .project .project-link {
+  @apply relative block mx-auto;
+}
+
+#portfolio .project .project-link .project-hover {
+  @apply flex absolute w-full h-full bg-opacity-60 bg-custom-opPrimary items-center justify-center opacity-0 transition-opacity ease-in-out duration-300 rounded-lg;
+}
+
+#portfolio .project .project-link .project-hover .hover-content {
+  @apply text-lg text-white;
+}
+
+#portfolio .project .project-link:hover .project-hover {
+  @apply opacity-100;
+}
+
+#portfolio .project {
+  @apply p-6 text-center bg-white text-lg font-semibold mb-0 italic;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.portfolio-modal .modal-lg {
+  @apply bg-white !important;
+}
+
+.portfolio-modal .modal-lg h5 {
+  @apply text-custom-primary;
+  padding-top: 15px !important;
+}
+
+.portfolio-modal .modal-lg ul {
+  @apply list-none;
+}
+
+.portfolio-modal .modal-lg .btn {
+  @apply text-white !important;
+  @apply bg-custom-primary !important;
+  margin: 15px;
+  margin-bottom: 15px;
+}
+
+.npx h3 {
+  @apply text-custom-npxOrange;
+}
+
+.p-content {
+  @apply bg-white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Lato", sans-serif;
+}
+
+.stage h3 {
+  @apply text-custom-npxOrange;
+}
+
+.stage .go-back {
+  @apply bg-custom-primary text-white font-bold;
+  margin: 15px;
+}
+
+.stage .go-back:hover {
+  @apply bg-custom-purple;
+}
+
+.remove-bullet {
+  @apply list-none;
+}
+
+.php h5,
+.php h6 {
+  @apply text-custom-primary;
+  padding: 5px;
+}
+
+.php .fa-laravel {
+  color: #fb503b !important;
+  font-size: 25px;
+}
+
+.php .fa-php {
+  color: #8993be;
+  font-size: 25px;
+}
+
+.php .card-body .p-info {
+  @apply text-custom-indigo !important;
+}
+
+.php .card-body .p-info .gh {
+  @apply font-bold;
+}
+
+.php .card-body .p-info a {
+  @apply text-custom-indigo;
+  @apply no-underline;
+}
+
+.php .card-body .card:hover .card-hover-images {
+  @apply block;
+}
+
+.php .card-body .card-hover-images {
+  @apply hidden absolute top-0 left-0 w-full h-full z-10;
+}
+
+.php .card-body .card-hover-image1 {
+  @apply bg-cover bg-center float-left;
+  background-image: url("./../public/assets/images/portfolio/homepage.png");
+  width: 50%;
+  height: 100%;
+}
+
+.php .card-body .card-hover-image2 {
+  @apply bg-cover bg-center float-right;
+  background-image: url("./../public/assets/images/portfolio/admin.png");
+  width: 50%;
+  height: 100%;
+}

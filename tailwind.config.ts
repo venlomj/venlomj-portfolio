@@ -17,14 +17,11 @@ const config: Config = {
       colors: {
         "light-blue": "#3b82f6",
         primary: {
-          // background: "rgb(11, 17, 32, .03)", //"rgba(255, 255, 255, .05)",
           background: "#fff",
           foreground: "#000",
           hbackground: "#F8F8F8",
         },
         secondary: {
-          // background: "rgb(11, 17, 32)", //"rgba(255, 255, 255, .03)",
-          // foreground: "rgb(11, 17, 32, 0.4)", //"rgba(255,255,255,0.4)",
           background: "rgb(1,1,11)",
           foreground: "#fff",
         },
@@ -32,6 +29,7 @@ const config: Config = {
           joust: "#56acff",
           cosmos: "#003049",
           hera: "#7179ef",
+          DEFAULT: "#000075", // Add a default value for blue
         },
         green: {
           benzol: "#00d372",
@@ -41,9 +39,34 @@ const config: Config = {
         },
         dark: "#232A3C",
         medium: "#293245",
+        custom: {
+          indigo: "#6610f2",
+          purple: "#8C13B2",
+          cyan: "#ecf1fd",
+          blueGray: "#7393B3",
+          gold: "#FFD700",
+          mjBlue: "#2FB8FF",
+          opPrimary: "rgba(0, 0, 117, 0.6)",
+          npxOrange: "#e94e2a",
+          linkedin: "#0072b1",
+          white: "#fff",
+          gray100: "#f8f9fa",
+          gray200: "#e9ecef",
+          gray300: "#dee2e6",
+          gray400: "#ced4da",
+          gray500: "#adb5bd",
+          gray600: "#6c757d",
+          gray700: "#495057",
+          gray800: "#343a40",
+          gray900: "#212529",
+          black: "#000",
+          // Add custom color
+          primary: "#ff6347", // Example color; replace with your desired color
+        },
       },
     },
   },
   plugins: [],
 };
+
 export default config;
