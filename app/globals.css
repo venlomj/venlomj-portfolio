@@ -199,3 +199,7 @@ h5 {
   width: 50%;
   height: 100%;
 }
+
+.hover\\:bg-purple-opacp:hover {
+  background-color: rgba(0, 0, 117, 0.6);
+}

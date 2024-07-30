@@ -4,6 +4,7 @@ import HobbySection from "@/sections/hobby";
 import SkillSection from "@/sections/skills";
 import InternshipSection from "@/sections/internship";
 import FeaturedSection from "@/sections/featured";
+import GraduateSection from "@/sections/graduate";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <SkillSection />
       <InternshipSection />
       <FeaturedSection />
+      <GraduateSection />
     </div>
   );
 }

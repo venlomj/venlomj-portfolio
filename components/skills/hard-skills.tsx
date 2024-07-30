@@ -7,7 +7,7 @@ import Heading from "../heading/heading";
 const HardSkills = () => {
   return (
     <div className="flex flex-wrap justify-center gap-4 p-4 dark:bg-secondary-background dark:text-white mx-auto">
-      <Heading title="Soft Skills" />
+      <Heading title="Hard Skills" />
       {hardSkills.map((skill) => (
         <Tooltip
           key={skill.id}

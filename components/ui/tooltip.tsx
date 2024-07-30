@@ -17,13 +17,13 @@ const Tooltip: FC<TooltipProps> = ({ title, image, bgColor }) => {
       className={cn(
         "relative bg-[#2D2C33] w-10 h-10 transform cursor-pointer grid place-items-center",
         "rounded-lg",
-        "hover:scale-110 transition-all duration-200"
+        "!hover:scale-120 transition-all duration-200"
       )}
       style={{ background: `${bgColor || "#2D2C33"}` }}
       onMouseEnter={() => setActive(true)}
       onMouseLeave={() => setActive(false)}
     >
-      <div className="w-[27px] h-[27px]">
+      <div className="w-[30px] h-[30px] hover:scale-150">
         <Image
           src={image}
           alt={title}
